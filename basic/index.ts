@@ -5,7 +5,7 @@ const appLabels = { app: "nginx" };
 const deployment = new k8s.apps.v1.Deployment("nginx", {
     spec: {
         selector: { matchLabels: appLabels },
-        replicas: 1,
+        replicas: 2,
         template: {
             metadata: { labels: appLabels },
             spec: { containers: [{ name: "nginx", image: "nginx" }] }
