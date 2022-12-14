@@ -26,7 +26,7 @@ func main() {
 					Spec: &corev1.PodSpecArgs{
 						Containers: corev1.ContainerArray{
 							corev1.ContainerArgs{
-								Name:  pulumi.String("nginx"),
+								Name:  pulumi.String("www"),
 								Image: pulumi.String("nginx"),
 							}},
 					},
