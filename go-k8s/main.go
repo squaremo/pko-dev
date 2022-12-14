@@ -16,6 +16,8 @@ import (
 	_ "github.com/pulumi/pulumi-aws/sdk/v5/go/aws"
 	_ "github.com/pulumi/pulumi-random/sdk/v4/go/random"
 	_ "github.com/pulumi/pulumi-vault/sdk/v5/go/vault"
+	_ "k8s.io/apimachinery"
+	_ "k8s.io/client-go"
 )
 
 func main() {
