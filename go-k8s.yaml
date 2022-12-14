@@ -1,0 +1,19 @@
+---
+apiVersion: pulumi.com/v1
+kind: Stack
+metadata:
+  name: go-k8s
+  namespace: default
+spec:
+  envRefs:
+    PULUMI_ACCESS_TOKEN:
+      type: Secret
+      secret:
+        name: pulumi-token
+        key: PULUMI_ACCESS_TOKEN
+  stack: squaremo/go-k8s/barret
+  projectRepo: https://github.com/squaremo/pko-dev
+  branch: main
+  repoDir: ./go-k8s
+  continueResyncOnCommitMatch: true
+  resyncFrequencySeconds: 60

@@ -1,0 +1,3 @@
+name: go-k8s
+description: A minimal Kubernetes Go Pulumi program
+runtime: go
