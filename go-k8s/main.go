@@ -6,7 +6,16 @@ import (
 	metav1 "github.com/pulumi/pulumi-kubernetes/sdk/v3/go/kubernetes/meta/v1"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 
+	// arbitrary stuff
+	_ "github.com/hashicorp/go-retryablehttp"
+	_ "github.com/hashicorp/go-tfe"
+	_ "github.com/hashicorp/vault/api"
+	_ "github.com/hashicorp/vault/api/auth/kubernetes"
+	_ "github.com/imdario/mergo"
+	_ "github.com/mitchellh/mapstructure"
 	_ "github.com/pulumi/pulumi-aws/sdk/v5/go/aws"
+	_ "github.com/pulumi/pulumi-random/sdk/v4/go/random"
+	_ "github.com/pulumi/pulumi-vault/sdk/v5/go/vault"
 )
 
 func main() {
